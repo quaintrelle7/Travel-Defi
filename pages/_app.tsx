@@ -1,11 +1,11 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { ChakraProvider } from '@chakra-ui/react'
 import '@rainbow-me/rainbowkit/styles.css';
 import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import { arbitrum, goerli, mainnet, optimism, polygon, polygonMumbai, avalanche } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
+import { ChakraProvider } from '@chakra-ui/react';
 
 // import Layout from '../components/Layout/Layout'
 
