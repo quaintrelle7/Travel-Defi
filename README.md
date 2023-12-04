@@ -11,7 +11,10 @@ npm run dev
 ## User Contract Address:
 0xd02ca68f3ddf77aabc5871cb7c7f9f26a41ca761
 
-##Travel Defy:
+## NFT Contract Address:
+0xdc29b0d7fcb57c25a19acb9509a9af7a0145459d
+
+### Travel Defy:
 
 Hotels and travel agencies are poised to revolutionize customer loyalty programs through the implementation of NFTs. These unique digital tokens become the cornerstone of loyalty initiatives, allowing customers to not only accrue rewards but also trade and exchange them for a spectrum of benefits. From coveted discounts and room upgrades to exclusive access to the luxurious amenities of hotel spas, the possibilities are as diverse as the travel experiences on offer. NFT-based loyalty programs not only incentivize customer loyalty but also introduce an innovative and dynamic dimension to reward structures, fostering deeper connections between travel providers and their clients.
 

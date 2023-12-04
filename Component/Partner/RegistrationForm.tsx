@@ -47,7 +47,7 @@ const RegistrationForm: React.FC<RegistrationFormProps> = () => {
     const [showFailureMessage, setShowFailureMessage] = useState(false);
 
 
-    const handleMentorRegistration = async (e: React.FormEvent) => {
+    const handlePartnerRegistration = async (e: React.FormEvent) => {
         e.preventDefault();
 
         if (PartnerContract && name && description && partnerType && imageURL) {
@@ -55,8 +55,8 @@ const RegistrationForm: React.FC<RegistrationFormProps> = () => {
 
             try {
                 const accounts = await web3.eth.getAccounts();
-                await PartnerContract.methods.registerAsMentor(name, description, partnerType, imageURL).send({ from: accounts[0] });
-                console.log('Mentor registered successfully!');
+                await PartnerContract.methods.registerPartner(name, description, partnerType, imageURL).send({ from: accounts[0] });
+                console.log('Partner registered successfully!');
                 setShowSuccessMessage(true);
                 setShowFailureMessage(false);
                 setName("");
@@ -64,7 +64,6 @@ const RegistrationForm: React.FC<RegistrationFormProps> = () => {
                 setPartnerType("");
                 setImageURL
                 setButtonText("Register");
-                // Additional logic after successful mentor registration
                 console.log(name, partnerType, partnerAddress, description);
             } catch (error) {
                 setShowSuccessMessage(false);
@@ -88,7 +87,7 @@ const RegistrationForm: React.FC<RegistrationFormProps> = () => {
                     <br></br>
                     <br></br>
 
-                    <form onSubmit={handleMentorRegistration}>
+                    <form onSubmit={handlePartnerRegistration}>
                         <Stack>
 
                             <Flex>  <Stack flexGrow={1}>
@@ -148,8 +147,8 @@ const RegistrationForm: React.FC<RegistrationFormProps> = () => {
 
 
 
-                            {showSuccessMessage && <Text align={"center"} color={"green.400"} fontWeight={600}>Mentor Registered Successfully!</Text>}
-                            {showFailureMessage && <Text align={"center"} color={"red"} fontWeight={400}>Could not register you, please connect to matic and check balance and try again!</Text>}
+                            {showSuccessMessage && <Text align={"center"} color={"green.400"} fontWeight={600}>Partner Registered Successfully!</Text>}
+                            {showFailureMessage && <Text align={"center"} color={"red"} fontWeight={400}>Could not register you, please connect to Metachain and check balance and try again!</Text>}
                         </Stack>
 
                         {/* <FormHelperText>We'll never share your email.</FormHelperText> */}

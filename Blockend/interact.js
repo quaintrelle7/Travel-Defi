@@ -6,7 +6,7 @@ const UserAbi = require("./build/user.json");
 
 const partnerContractAddress = "0x698e9d8c3dc156bbb4be95e8300b3c30212845e0";
 
-const NFTContractAddress = "0xf9fA7f55a571B847e29Af95eE2FA4145ED1EF62B";
+const NFTContractAddress = "0xdc29b0d7fcb57c25a19acb9509a9af7a0145459d";
 
 const userContractAddress= "0xd02ca68f3ddf77aabc5871cb7c7f9f26a41ca761";
 

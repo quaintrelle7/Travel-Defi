@@ -2,12 +2,13 @@ import { Box, Button, Center, Container, Flex, Heading, Link } from '@chakra-ui/
 import React from 'react'
 import Navbar from './Navbar/Navbar'
 import Carousel from './Homepage/Carousel'
+import PartnerList from './Partner/PartnerList'
 
 type Props = {}
 
 function HomePage({}: Props) {
   return (<>
-  <Box  width={"100%"} height={"100vh"} style={{
+  <Box  width={"100%"} height={"auto"} style={{
           backgroundImage: `url(https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -30,6 +31,7 @@ function HomePage({}: Props) {
           
     
   </Center>
+  <PartnerList/>
   </Box>
   </>
   )
