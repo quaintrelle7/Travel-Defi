@@ -49,7 +49,7 @@ function PartnerTile({ partner }: Props) {
         }}
       >
         <Stack>
-          <Flex className="topFeatures" m={2} justifyContent={"space-between"} bgColor={"#a5e5ff"} fontWeight={"500"} >
+          <Flex className="topFeatures" m={2} justifyContent={"space-between"} bgColor={"whiteAlpha.200"} fontWeight={"500"} >
             <div style={{ display: "flex" }}>
               {partner.partnerAddress}{" "}
             </div>

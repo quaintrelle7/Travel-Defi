@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
         <Flex bg={"brand.400"}
             height="60px"
             color="white"
-
+bgColor={"blackAlpha.700"}
             align={"center"}
             justifyContent={{ md: "space-between" }}>
 
@@ -61,6 +61,7 @@ Travel
                 marginRight={10}
             >
 
+<Link href={`/MyProfile/${account}`} fontSize={"20px"} marginLeft="20" marginRight={"20"}>My NFTs</Link>
 <Link href='/partner' fontSize={"20px"} marginLeft="20" marginRight={"20"}>Join as a Partner</Link>
 
 <Box  bgColor={"#a5e5ff"} borderRadius={5} padding={1}>
