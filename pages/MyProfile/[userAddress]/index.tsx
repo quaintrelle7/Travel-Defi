@@ -42,7 +42,7 @@ useEffect(() => {
        {nftList?.[0]?.[0]}
   <Text fontSize={20}>Token URI</Text>
   <Link href = {nftList?.[1]?.[0]} color={"blue"} textDecor={"underline"}>
-    JW Marriott Exclusive NFT
+    Hotel Exclusive NFT
   </Link>
 </Box>
 

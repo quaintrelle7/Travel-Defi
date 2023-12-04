@@ -26,6 +26,8 @@ function PartnerTile({ partner }: Props) {
   return (
     <>
       <Box
+       marginBottom={10}
+       marginRight={20}
         filter={"auto"}
         brightness={"100%"}
         boxShadow={
